@@ -13,6 +13,6 @@ For example:
 - ```frames_rgb_flow/flow/download_train.sh``` will download all the __flow__ images contained in the __train__ set
 
 
-You can a script simply with ```sh download_videos.sh``` in any shell where ```wget``` is available
+You can run a script simply with ```sh download_videos.sh``` in any shell where ```wget``` is available
 
 The scripts will reconstruct the dataset structure as they are executed
