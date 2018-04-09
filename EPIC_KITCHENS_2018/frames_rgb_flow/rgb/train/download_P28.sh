@@ -1,14 +1,9 @@
-wget -P frames_rgb_flow/rgb/train/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P28/P28_14.tar
-wget -P frames_rgb_flow/rgb/train/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P28/P28_11.tar
-wget -P frames_rgb_flow/rgb/train/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P28/P28_07.tar
-wget -P frames_rgb_flow/rgb/train/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P28/P28_13.tar
-wget -P frames_rgb_flow/rgb/train/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P28/P28_09.tar
-wget -P frames_rgb_flow/rgb/train/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P28/P28_06.tar
-wget -P frames_rgb_flow/rgb/train/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P28/P28_03.tar
-wget -P frames_rgb_flow/rgb/train/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P28/P28_05.tar
-wget -P frames_rgb_flow/rgb/train/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P28/P28_12.tar
-wget -P frames_rgb_flow/rgb/train/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P28/P28_01.tar
-wget -P frames_rgb_flow/rgb/train/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P28/P28_04.tar
-wget -P frames_rgb_flow/rgb/train/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P28/P28_10.tar
-wget -P frames_rgb_flow/rgb/train/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P28/P28_08.tar
-wget -P frames_rgb_flow/rgb/train/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P28/P28_02.tar
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "You must call this script passing the output path as first and only parameter"
+    echo "A folder named 'EPIC_KITCHENS_2018' will be created at the specified output path"
+    exit
+fi
+
+wget -P "$1/EPIC_KITCHENS_2018/frames_rgb_flow/rgb/train/P28" https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P28/P28_02.tar

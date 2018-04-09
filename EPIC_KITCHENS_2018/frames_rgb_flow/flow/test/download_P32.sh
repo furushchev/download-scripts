@@ -1,10 +1,9 @@
-wget -P frames_rgb_flow/flow/test/P32 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P32/P32_10.tar
-wget -P frames_rgb_flow/flow/test/P32 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P32/P32_02.tar
-wget -P frames_rgb_flow/flow/test/P32 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P32/P32_05.tar
-wget -P frames_rgb_flow/flow/test/P32 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P32/P32_09.tar
-wget -P frames_rgb_flow/flow/test/P32 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P32/P32_01.tar
-wget -P frames_rgb_flow/flow/test/P32 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P32/P32_03.tar
-wget -P frames_rgb_flow/flow/test/P32 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P32/P32_08.tar
-wget -P frames_rgb_flow/flow/test/P32 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P32/P32_04.tar
-wget -P frames_rgb_flow/flow/test/P32 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P32/P32_06.tar
-wget -P frames_rgb_flow/flow/test/P32 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P32/P32_07.tar
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "You must call this script passing the output path as first and only parameter"
+    echo "A folder named 'EPIC_KITCHENS_2018' will be created at the specified output path"
+    exit
+fi
+
+wget -P "$1/EPIC_KITCHENS_2018/frames_rgb_flow/flow/test/P32" https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P32/P32_07.tar

@@ -1,10 +1,9 @@
-wget -P object_detection_images/train/P15 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P15/P15_11.tar
-wget -P object_detection_images/train/P15 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P15/P15_08.tar
-wget -P object_detection_images/train/P15 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P15/P15_13.tar
-wget -P object_detection_images/train/P15 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P15/P15_12.tar
-wget -P object_detection_images/train/P15 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P15/P15_03.tar
-wget -P object_detection_images/train/P15 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P15/P15_09.tar
-wget -P object_detection_images/train/P15 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P15/P15_02.tar
-wget -P object_detection_images/train/P15 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P15/P15_10.tar
-wget -P object_detection_images/train/P15 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P15/P15_07.tar
-wget -P object_detection_images/train/P15 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P15/P15_01.tar
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "You must call this script passing the output path as first and only parameter"
+    echo "A folder named 'EPIC_KITCHENS_2018' will be created at the specified output path"
+    exit
+fi
+
+wget -P "$1/EPIC_KITCHENS_2018/object_detection_images/train/P15" https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P15/P15_01.tar

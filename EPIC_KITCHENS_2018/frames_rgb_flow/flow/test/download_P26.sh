@@ -1,12 +1,9 @@
-wget -P frames_rgb_flow/flow/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P26/P26_35.tar
-wget -P frames_rgb_flow/flow/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P26/P26_41.tar
-wget -P frames_rgb_flow/flow/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P26/P26_30.tar
-wget -P frames_rgb_flow/flow/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P26/P26_33.tar
-wget -P frames_rgb_flow/flow/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P26/P26_36.tar
-wget -P frames_rgb_flow/flow/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P26/P26_40.tar
-wget -P frames_rgb_flow/flow/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P26/P26_37.tar
-wget -P frames_rgb_flow/flow/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P26/P26_32.tar
-wget -P frames_rgb_flow/flow/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P26/P26_34.tar
-wget -P frames_rgb_flow/flow/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P26/P26_39.tar
-wget -P frames_rgb_flow/flow/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P26/P26_31.tar
-wget -P frames_rgb_flow/flow/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P26/P26_38.tar
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "You must call this script passing the output path as first and only parameter"
+    echo "A folder named 'EPIC_KITCHENS_2018' will be created at the specified output path"
+    exit
+fi
+
+wget -P "$1/EPIC_KITCHENS_2018/frames_rgb_flow/flow/test/P26" https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P26/P26_38.tar

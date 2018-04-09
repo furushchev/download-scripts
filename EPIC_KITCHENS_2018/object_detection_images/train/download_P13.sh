@@ -1,7 +1,9 @@
-wget -P object_detection_images/train/P13 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P13/P13_05.tar
-wget -P object_detection_images/train/P13 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P13/P13_04.tar
-wget -P object_detection_images/train/P13 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P13/P13_06.tar
-wget -P object_detection_images/train/P13 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P13/P13_08.tar
-wget -P object_detection_images/train/P13 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P13/P13_09.tar
-wget -P object_detection_images/train/P13 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P13/P13_07.tar
-wget -P object_detection_images/train/P13 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P13/P13_10.tar
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "You must call this script passing the output path as first and only parameter"
+    echo "A folder named 'EPIC_KITCHENS_2018' will be created at the specified output path"
+    exit
+fi
+
+wget -P "$1/EPIC_KITCHENS_2018/object_detection_images/train/P13" https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P13/P13_10.tar

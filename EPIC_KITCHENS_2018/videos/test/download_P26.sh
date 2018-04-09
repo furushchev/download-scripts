@@ -1,12 +1,9 @@
-wget -P videos/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/test/P26/P26_40.MP4
-wget -P videos/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/test/P26/P26_36.MP4
-wget -P videos/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/test/P26/P26_35.MP4
-wget -P videos/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/test/P26/P26_39.MP4
-wget -P videos/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/test/P26/P26_37.MP4
-wget -P videos/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/test/P26/P26_31.MP4
-wget -P videos/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/test/P26/P26_32.MP4
-wget -P videos/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/test/P26/P26_30.MP4
-wget -P videos/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/test/P26/P26_38.MP4
-wget -P videos/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/test/P26/P26_33.MP4
-wget -P videos/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/test/P26/P26_34.MP4
-wget -P videos/test/P26 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/test/P26/P26_41.MP4
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "You must call this script passing the output path as first and only parameter"
+    echo "A folder named 'EPIC_KITCHENS_2018' will be created at the specified output path"
+    exit
+fi
+
+wget -P "$1/EPIC_KITCHENS_2018/videos/test/P26" https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/test/P26/P26_41.MP4

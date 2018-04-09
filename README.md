@@ -1,4 +1,4 @@
-This repository contains bash script that use __wget__ to download different parts of the dataset
+This repository contains bash scripts that use __wget__ to download different parts of the dataset
 
 The repository replicates the folder structure of the dataset
 
@@ -13,6 +13,8 @@ For example:
 - ```frames_rgb_flow/flow/download_train.sh``` will download all the __flow__ images contained in the __train__ set
 
 
-You can run a script simply with ```sh download_videos.sh``` in any shell where ```wget``` is available
+You can run a script simply with ```sh download_videos.sh ~/Desktop``` in any shell where ```wget``` is available
+You must call the scripts passing the output path as first and only parameter
+A folder named 'EPIC_KITCHENS_2018' will be created at the specified output path
 
 The scripts will reconstruct the dataset structure as they are executed

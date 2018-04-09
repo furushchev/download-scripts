@@ -1,12 +1,9 @@
-wget -P object_detection_images/test/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P28/P28_20.tar
-wget -P object_detection_images/test/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P28/P28_21.tar
-wget -P object_detection_images/test/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P28/P28_24.tar
-wget -P object_detection_images/test/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P28/P28_26.tar
-wget -P object_detection_images/test/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P28/P28_18.tar
-wget -P object_detection_images/test/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P28/P28_15.tar
-wget -P object_detection_images/test/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P28/P28_16.tar
-wget -P object_detection_images/test/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P28/P28_23.tar
-wget -P object_detection_images/test/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P28/P28_25.tar
-wget -P object_detection_images/test/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P28/P28_17.tar
-wget -P object_detection_images/test/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P28/P28_19.tar
-wget -P object_detection_images/test/P28 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P28/P28_22.tar
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "You must call this script passing the output path as first and only parameter"
+    echo "A folder named 'EPIC_KITCHENS_2018' will be created at the specified output path"
+    exit
+fi
+
+wget -P "$1/EPIC_KITCHENS_2018/object_detection_images/test/P28" https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P28/P28_22.tar

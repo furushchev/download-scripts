@@ -1,21 +1,9 @@
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_17.tar
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_15.tar
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_18.tar
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_02.tar
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_11.tar
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_03.tar
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_28.tar
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_08.tar
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_20.tar
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_27.tar
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_05.tar
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_13.tar
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_06.tar
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_04.tar
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_10.tar
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_09.tar
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_14.tar
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_19.tar
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_16.tar
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_12.tar
-wget -P object_detection_images/train/P03 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_07.tar
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "You must call this script passing the output path as first and only parameter"
+    echo "A folder named 'EPIC_KITCHENS_2018' will be created at the specified output path"
+    exit
+fi
+
+wget -P "$1/EPIC_KITCHENS_2018/object_detection_images/train/P03" https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/train/P03/P03_07.tar

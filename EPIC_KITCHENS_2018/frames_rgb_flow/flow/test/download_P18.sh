@@ -1,12 +1,9 @@
-wget -P frames_rgb_flow/flow/test/P18 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P18/P18_04.tar
-wget -P frames_rgb_flow/flow/test/P18 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P18/P18_12.tar
-wget -P frames_rgb_flow/flow/test/P18 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P18/P18_10.tar
-wget -P frames_rgb_flow/flow/test/P18 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P18/P18_11.tar
-wget -P frames_rgb_flow/flow/test/P18 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P18/P18_01.tar
-wget -P frames_rgb_flow/flow/test/P18 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P18/P18_08.tar
-wget -P frames_rgb_flow/flow/test/P18 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P18/P18_06.tar
-wget -P frames_rgb_flow/flow/test/P18 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P18/P18_05.tar
-wget -P frames_rgb_flow/flow/test/P18 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P18/P18_07.tar
-wget -P frames_rgb_flow/flow/test/P18 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P18/P18_09.tar
-wget -P frames_rgb_flow/flow/test/P18 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P18/P18_02.tar
-wget -P frames_rgb_flow/flow/test/P18 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P18/P18_03.tar
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "You must call this script passing the output path as first and only parameter"
+    echo "A folder named 'EPIC_KITCHENS_2018' will be created at the specified output path"
+    exit
+fi
+
+wget -P "$1/EPIC_KITCHENS_2018/frames_rgb_flow/flow/test/P18" https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/flow/test/P18/P18_03.tar

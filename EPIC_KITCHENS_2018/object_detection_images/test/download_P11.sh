@@ -1,24 +1,9 @@
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_21.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_24.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_02.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_09.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_06.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_04.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_16.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_07.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_03.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_20.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_08.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_13.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_19.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_05.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_10.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_12.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_01.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_15.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_17.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_18.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_23.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_11.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_14.tar
-wget -P object_detection_images/test/P11 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_22.tar
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "You must call this script passing the output path as first and only parameter"
+    echo "A folder named 'EPIC_KITCHENS_2018' will be created at the specified output path"
+    exit
+fi
+
+wget -P "$1/EPIC_KITCHENS_2018/object_detection_images/test/P11" https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P11/P11_22.tar

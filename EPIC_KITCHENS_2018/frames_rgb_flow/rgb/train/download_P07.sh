@@ -1,11 +1,9 @@
-wget -P frames_rgb_flow/rgb/train/P07 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P07/P07_09.tar
-wget -P frames_rgb_flow/rgb/train/P07 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P07/P07_08.tar
-wget -P frames_rgb_flow/rgb/train/P07 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P07/P07_02.tar
-wget -P frames_rgb_flow/rgb/train/P07 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P07/P07_03.tar
-wget -P frames_rgb_flow/rgb/train/P07 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P07/P07_01.tar
-wget -P frames_rgb_flow/rgb/train/P07 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P07/P07_06.tar
-wget -P frames_rgb_flow/rgb/train/P07 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P07/P07_11.tar
-wget -P frames_rgb_flow/rgb/train/P07 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P07/P07_05.tar
-wget -P frames_rgb_flow/rgb/train/P07 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P07/P07_04.tar
-wget -P frames_rgb_flow/rgb/train/P07 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P07/P07_07.tar
-wget -P frames_rgb_flow/rgb/train/P07 https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P07/P07_10.tar
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+    echo "You must call this script passing the output path as first and only parameter"
+    echo "A folder named 'EPIC_KITCHENS_2018' will be created at the specified output path"
+    exit
+fi
+
+wget -P "$1/EPIC_KITCHENS_2018/frames_rgb_flow/rgb/train/P07" https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/frames_rgb_flow/rgb/train/P07/P07_10.tar
