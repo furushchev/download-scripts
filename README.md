@@ -12,12 +12,13 @@ For example:
 - ```videos/test/download_P01.sh``` will download only __test__ videos from subject __P01__
 - ```frames_rgb_flow/flow/download_train.sh``` will download all the __flow__ images contained in the __train__ set
 
+To run one script, simply invoke it via ```sh``` in any shell where ```wget``` is available
 
-You can run a script simply with ```sh download_videos.sh ~/Desktop``` in any shell where ```wget``` is available
+The scripts take a single optional parameter, to specify a desired output path
 
-You must call the scripts passing the output path as first and only parameter
+If you do not specify any parameter, the scripts will assume the output path is```~/Download```
 
-A folder named __EPIC_KITCHENS_2018__ will be created at the specified output path
+A folder named __EPIC_KITCHENS_2018__ will be created at the output path as the main dataset folder
 
 The scripts will reconstruct the dataset structure as they are executed, so if you run for example
 
@@ -28,3 +29,7 @@ the script will create the following folder structure
 ```~/Desktop/EPIC_KITCHENS_2018/videos/test/P16```
 
 and will save P16's test videos to the above path
+
+You can interrupt any script at any time and resume the download afterwards
+
+If you will run the script again later using the same output path, already downloaded files will be skipped
