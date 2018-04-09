@@ -25,4 +25,4 @@ The scripts will reconstruct the dataset structure as they are executed, so if y
 
 the script will create the following folder structure
 
-```~/Desktop/EPIC_KITCHENS_2018/videos/test/P20```
+```~/Desktop/EPIC_KITCHENS_2018/videos/test/P16```
