@@ -14,7 +14,9 @@ For example:
 
 
 You can run a script simply with ```sh download_videos.sh ~/Desktop``` in any shell where ```wget``` is available
+
 You must call the scripts passing the output path as first and only parameter
+
 A folder named 'EPIC_KITCHENS_2018' will be created at the specified output path
 
 The scripts will reconstruct the dataset structure as they are executed
