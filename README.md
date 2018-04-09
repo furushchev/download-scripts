@@ -26,3 +26,5 @@ The scripts will reconstruct the dataset structure as they are executed, so if y
 the script will create the following folder structure
 
 ```~/Desktop/EPIC_KITCHENS_2018/videos/test/P16```
+
+and will save P16's test videos to the above path
