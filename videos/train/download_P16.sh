@@ -7,8 +7,8 @@ else
 fi
 
 if ! [ -x "$(command -v wget)" ]; then
-  echo "Error!: wget is not installed! Please install it and try again"
-  exit 1
+    echo "Error!: wget is not installed! Please install it and try again"
+    exit 1
 fi
 
 echo -e "\n### ------------------------------------------------------- ###\n"
