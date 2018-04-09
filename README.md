@@ -14,7 +14,17 @@ For example:
 
 
 You can run a script simply with ```sh download_videos.sh ~/Desktop``` in any shell where ```wget``` is available
-You must call the scripts passing the output path as first and only parameter
-A folder named 'EPIC_KITCHENS_2018' will be created at the specified output path
 
-The scripts will reconstruct the dataset structure as they are executed
+You must call the scripts passing the output path as first and only parameter
+
+A folder named __EPIC_KITCHENS_2018__ will be created at the specified output path
+
+The scripts will reconstruct the dataset structure as they are executed, so if you run for example
+
+```sh videos/test/download_P16.sh ~/Desktop```
+
+the script will create the following folder structure
+
+```~/Desktop/EPIC_KITCHENS_2018/videos/test/P16```
+
+and will save P16's test videos to the above path
