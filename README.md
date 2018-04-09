@@ -33,3 +33,5 @@ and will save P16's test videos to the above path
 You can interrupt any script at any time and resume the download afterwards
 
 If you will run the script again later using the same output path, already downloaded files will be skipped
+
+_Note: These scripts will work for Linux and Mac. For Windows users a bash installation should work_
