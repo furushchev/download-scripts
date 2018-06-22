@@ -19,11 +19,18 @@ epic_download() {
     local url=$1
     local path=$2
     local niceFilePath=$3
-    
+
+    while test $(jobs -p | wc -w) -ge 10; do
+      sleep 1
+      echo "# Waiting for $(jobs -p | wc -w) downloads..."
+    done
+
+    (
     echo -ne "# Downloading "$niceFilePath"\t"
     wget --progress=dot -N -P "$path" "$url" 2>&1 | grep --line-buffered "%" | sed -E "s,\.,,g" | awk '{printf("\b\b\b\b%4s", $2)}'
     echo -ne "\b\b\b\b"
     echo " # done"
+    ) &
 }
 
 epic_download "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/object_detection_images/test/P01/P01_11.tar" "$outputPath/object_detection_images/test/P01" "object_detection_images/test/P01/P01_11.tar"
